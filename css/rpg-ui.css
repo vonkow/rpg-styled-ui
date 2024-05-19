@@ -5,6 +5,7 @@
 @import "systems/dnd5e.css";
 @import "systems/blades-in-the-dark.css";
 @import "systems/shadowdark.css";
+@import "systems/ars.css";
 
 :root {
     --main-text-light-color: #98968a;

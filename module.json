@@ -1,9 +1,9 @@
 {
   "id": "rpg-styled-ui",
   "title": "RPG Styled UI for Foundry VTT",
-  "description": "Theme for DnD5e.",
-  "url": "https://github.com/Xbozon/rpg-styled-ui",
-  "version": "v1.2.1",
+  "description": "Theme for DnD5e and ARS.",
+  "url": "https://github.com/vonkow/rpg-styled-ui",
+  "version": "v1.2.1a",
   "compatibility": {
     "minimum": "11",
     "verified": "11",
@@ -29,6 +29,10 @@
       },
       {
         "id": "blades-in-the-dark",
+        "type": "system"
+      },
+      {
+        "id": "ars",
         "type": "system"
       }
     ]
@@ -56,12 +60,16 @@
       "flags": {}
     }
   ],
-  "manifest": "https://raw.githubusercontent.com/Xbozon/rpg-styled-ui/main/module.json",
-  "download": "https://github.com/Xbozon/rpg-styled-ui/archive/refs/tags/v1.2.1.zip",
+  "manifest": "https://raw.githubusercontent.com/vonkow/rpg-styled-ui/main/module.json",
+  "download": "https://github.com/Xbozon/rpg-styled-ui/archive/refs/tags/v1.2.1a.zip",
 
   "authors": [
     {
       "name": "Xbozon",
+      "flags": {}
+    },
+    {
+      "name": "vonkow",
       "flags": {}
     }
   ]
