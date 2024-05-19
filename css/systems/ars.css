@@ -700,6 +700,909 @@ input[disabled] {
 }
 
 /* good */
+.sidebar-tab .party-tracker .party-commands .boxed .time-type {
+  padding-top: 2px;
+  margin-bottom: -2px;
+}
+.sidebar-tab .party-tracker .general-header:not(.party-commands) {
+  background: var(--header-bg-color);
+  color: var(--header-text-color-light);
+}
+.sidebar-tab .party-tracker .party-members .entry .member {
+  color: var(--main-text-very-light-color);
+}
+.sidebar-tab .party-tracker .party-members .text-trunc {
+  color: var(--main-text-light-color);
+}
+.sidebar-tab .party-tracker input,
+.sidebar-tab .party-tracker select {
+  background: var(--text-bg-color);
+  color: var(--main-text-very-light-color);
+}
+.sidebar-tab .party-tracker .party-commands .boxed:hover, .sidebar-tab .party-tracker .party-commands .boxed:focus {
+  background-color: #ffffff24;
+}
+
+.sidebar-tab .party-tracker .party-members .entry .henchman {
+  color: aqua; /* todo - changeme */
+}
+
+/* good */
+.sidebar-tab .party-tracker .party-logs .date {
+  color: var(--main-text-light-color);
+}
+.sidebar-tab .party-tracker .party-logs .log {
+  color: var(--main-text-very-light-color);
+}
+
+/* good */
+article.journal-entry-page,
+.editor {
+  background: var(--text-bg-color);
+  border-image: linear-gradient(to right, rgba(173, 30, 30, 0.82), rgba(173, 30, 30, 0.82));
+  border-image-slice: 1;
+}
+
+article.journal-entry-page section.journal-page-content h1,
+article.journal-entry-page .editor-content h1,
+.editor section.journal-page-content h1,
+.editor .editor-content h1 {
+  border-bottom: 3px double black;
+  color: rgb(204, 3, 3);
+}
+article.journal-entry-page section.journal-page-content h2,
+article.journal-entry-page .editor-content h2,
+.editor section.journal-page-content h2,
+.editor .editor-content h2 {
+  border-bottom: 3px double black;
+  color: rgb(146, 3, 3);
+}
+article.journal-entry-page section.journal-page-content h3,
+article.journal-entry-page .editor-content h3,
+.editor section.journal-page-content h3,
+.editor .editor-content h3 {
+  color: rgb(7, 118, 245);
+}
+article.journal-entry-page section.journal-page-content h4,
+article.journal-entry-page .editor-content h4,
+.editor section.journal-page-content h4,
+.editor .editor-content h4 {
+  color: rgb(7, 118, 245);
+}
+
+article.journal-entry-page section.journal-page-content .content-link,
+article.journal-entry-page section.journal-page-content .inline-roll,
+article.journal-entry-page section.journal-page-content .loadscene-link,
+article.journal-entry-page .editor-content .content-link,
+article.journal-entry-page .editor-content .inline-roll,
+article.journal-entry-page .editor-content .loadscene-link,
+.editor section.journal-page-content .content-link,
+.editor section.journal-page-content .inline-roll,
+.editor section.journal-page-content .loadscene-link,
+.editor .editor-content .content-link,
+.editor .editor-content .inline-roll,
+.editor .editor-content .loadscene-link {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--ars_navy);
+}
+article.journal-entry-page section.journal-page-content a.content-link i,
+article.journal-entry-page section.journal-page-content a.inline-roll i,
+article.journal-entry-page section.journal-page-content a.loadscene-link i,
+article.journal-entry-page .editor-content a.content-link i,
+article.journal-entry-page .editor-content a.inline-roll i,
+article.journal-entry-page .editor-content a.loadscene-link i,
+.editor section.journal-page-content a.content-link i,
+.editor section.journal-page-content a.inline-roll i,
+.editor section.journal-page-content a.loadscene-link i,
+.editor .editor-content a.content-link i,
+.editor .editor-content a.inline-roll i,
+.editor .editor-content a.loadscene-link i {
+  color: var(--ars_cyan);
+}
+
+.trade-box .trade-window .accept-trade-button {
+  background-color: lightblue;
+}
+
+.trade-box .trade-window #trader-inventory div:nth-of-type(odd),
+.trade-box .trade-window #trader-trade div:nth-of-type(odd),
+.trade-box .trade-window #customer-trade.list div:nth-of-type(odd) {
+  background-color: rgb(230, 229, 224);
+}
+.trade-box .trade-window #trader-inventory div:nth-of-type(even),
+.trade-box .trade-window #trader-trade div:nth-of-type(even),
+.trade-box .trade-window #customer-trade.list div:nth-of-type(even) {
+  background-color: rgb(212, 212, 211);
+}
+
+div.gm-screen-grid-cell-content-wrapper > div > div > aside {
+  color: black !important;
+}
+
+/* END Global style overrides */
+
+/* SHEET */
+
+/* NEED THIS ONE */
+.ars.sheet.actor,
+.ars.sheet.item {
+    background: rgba(6, 4, 3, 1/*0.92*/);
+    border-image-source: url(../../ui/frames/input_border.webp);
+    border-image-slice: 5 20 20 20 fill;
+    border-image-repeat: repeat repeat;
+    border-image-width: auto;
+    border-image-outset: 1px 2px 2px 2px;
+    border-radius: 0;
+}
+
+
+.ars.sheet ::-webkit-scrollbar-thumb {
+    outline: none;
+    border-radius: 0px;
+    border: none;
+    background: #251f1d;
+}
+
+.ars.sheet ::-webkit-scrollbar-track {
+    background: #181413;
+}
+
+
+.window-app.ars.sheet.actor .window-header,
+.window-app.ars.sheet.item .window-header {
+    border: none;
+    color: var(--main-text-light-color);
+}
+
+.window-app.ars.sheet.actor .window-header::after,
+.window-app.ars.sheet.item .window-header::after {
+    position: absolute;
+    z-index: -1;
+    content: " ";
+    width: 100%;
+    height: 45px;
+    left: 0;
+    top: -9px;
+    background: url(../../ui/frames/header.webp);
+    background-size: 100% 45px;
+}
+
+.ars.sheet.actor .window-content,
+.ars.sheet.item .window-content {
+    background: none;
+    color: var(--main-text-light-color);
+}
+
+
+
+/* not sure about these, maybe important */
+
+.ars.sheet input[type="text"], .ars input[type="number"], .ars select {
+    color: #837360;
+    background: #ffffff14;
+}
+
+
+.ars.sheet input[type="text"]:hover,
+.ars.sheet input[type="number"]:hover,
+.ars.sheet input[type="text"]:focus,
+.ars.sheet input[type="number"]:focus {
+    box-shadow: none;
+    background: #ffffff25;
+}
+
+/* additions by caz */
+.compendium .directory-header .header-banner {
+  background-image: none !important;
+  height: 4em;
+  flex: 0 0 4em;
+}
+
+/* RGB */
+.fa-times,
+.fa-minus,
+.fa-asterisk,
+.fa-exclamation-triangle {
+  color: red;
+}
+
+.fa-plus,
+.fa-check-circle,
+.fa-scroll,
+.fa-thumbs-up {
+  color: #21e121;
+}
+
+:root {
+  --ars_navy: #2a2e75;
+  --ars_cyan: #22c0fc;
+  --ars_purple_dark: #25163f;
+  --ars_purple_light: #2e2631;
+  --ars_purple_light2: #7c6378;
+  --ars_red: #e22522;
+  --ars_red_dark: #6e1513;
+  --ars_yellow: #e8dbae;
+  --ars_highlight: #e3dadc;
+  --ars_goldenrod: #daa520;
+}
+
+.ars_frame {
+  background-color: brown;
+  border: 2px solid var(--ars_purple_light);
+  outline: 5px solid var(--ars_red);
+}
+
+/* This affects the width of the draggable scrolling element (the "thumb") */
+::-webkit-scrollbar-thumb {
+  background: darkgrey;
+}
+
+/* good */
+.general-header {
+  background: var(--header-bg-color);
+  color: var(--header-text-color-light);
+}
+
+/* good */
+.general-subheader {
+  background: var(--header-bg-color-light);
+  color: var(--header-text-color-light);
+}
+
+.button-box {
+  background-color: rgba(206, 162, 67, 0.514);
+  border: 3px outset grey;
+}
+
+.playerlist-trade-button {
+  background: rgba(60, 60, 60, 0.6);
+  border: 1px solid black;
+  color: white;
+}
+
+/* good */
+select,
+input[type],
+textarea {
+  background: transparent;
+  /* added this for item browser filters, remove if it's affecting others */
+  color: var(--main-text-very-light-color); 
+}
+input[type=range] {
+  background: transparent;
+}
+
+/* good */
+input[disabled] {
+  background: var(--text-bg-color);
+  color: var(--main-text-light-color)
+}
+
+/* good */
+.window-app {
+  font-family: 'Kurale', serif;
+}
+
+/* good - fixes the resize tooltip */
+.window-app .window-resizable-handle {
+  padding-top: 0px;
+}
+
+.sheet.item nav.sheet-tabs,
+.character nav.sheet-tabs,
+.npc nav.sheet-tabs {
+  color: white;
+}
+
+/* good */
+.sheet.item nav.sheet-tabs .tab-items,
+.sheet.item nav.sheet-tabs .tabs,
+.character nav.sheet-tabs .tab-items,
+.character nav.sheet-tabs .tabs,
+.npc nav.sheet-tabs .tab-items,
+.npc nav.sheet-tabs .tabs {
+  --sheet-tab-color-background: #000000;
+  --sheet-tab-color: var(--main-text-light-color);
+  --sheet-tab-color-active: var(--main-text-very-light-color);
+}
+.sheet.item nav.sheet-tabs .tab-items .active,
+.sheet.item nav.sheet-tabs .tabs .active,
+.character nav.sheet-tabs .tab-items .active,
+.character nav.sheet-tabs .tabs .active,
+.npc nav.sheet-tabs .tab-items .active,
+.npc nav.sheet-tabs .tabs .active {
+  color: var(--main-text-very-light-color);
+  --icon-fill: var(--main-text-very-light-color);
+}
+
+.sheet.item nav.sheet-tabs .item,
+.character nav.sheet-tabs .item,
+.npc nav.sheet-tabs .item {
+  background: var(--sheet-tab-color-background);
+  color: var(--sheet-tab-color);
+  --icon-fill: var(--sheet-tab-color);
+  border: 1px solid transparent;
+}
+.sheet.item nav.sheet-tabs .item .active,
+.sheet.item nav.sheet-tabs .item :hover,
+.character nav.sheet-tabs .item .active,
+.character nav.sheet-tabs .item :hover,
+.npc nav.sheet-tabs .item .active,
+.npc nav.sheet-tabs .item :hover {
+  text-shadow: none;
+  border-color: var(--sheet-tab-color);
+  box-shadow: 0 0 6px var(--sheet-tab-color);
+  color: var(--sheet-tab-color-active);
+  --icon-fill: var(--sheet-tab-color-active);
+}
+.sheet.item nav.sheet-tabs .item ::after,
+.character nav.sheet-tabs .item ::after,
+.npc nav.sheet-tabs .item ::after {
+  content: "";
+  border: 1px solid var(--sheet-tab-color);
+}
+
+.sheet.item {
+  --sheet-item-color-background: #2fcc0c;
+  --sheet-item-tab-color-background: #092b01;
+  background-color: var(--sheet-item-color-background);
+}
+.sheet.item nav.sheet-tabs .item {
+  background: var(--sheet-item-tab-color-background);
+}
+
+.memorization-slot .memorization-slot-empty select {
+  background-color: rgba(43, 255, 0, 0.25);
+}
+
+.memorization-titles {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.character .actor-titles,
+.npc .actor-titles,
+.lootable .actor-titles {
+  background: var(--color-border-light-primary);
+}
+.character .actor-titles .actor-header,
+.npc .actor-titles .actor-header,
+.lootable .actor-titles .actor-header {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* fix spacing on combat box (AC, HP, Move, Attack Matrix) */
+/* maybe need to add .thaco-icon and .thaco-value for other variants */
+.combat .combat-stats .combat-box .armor-icon:first-child,
+.combat .combat-stats .combat-box .hp-icon:first-child,
+.combat .combat-stats .combat-box .movement-icon:first-child {
+  line-height: 1em;
+}
+
+.combat .combat-stats .combat-box .armor-icon .ac-value,
+.combat .combat-stats .combat-box .hp-icon .hp-value,
+.combat .combat-stats .combat-box .movement-icon .movement-value {
+  margin-top: 5px;
+}
+
+/* Actions on character sheet (not items or skills) */
+/* good */
+.action-sheet-block .actionGroup:nth-of-type(odd) {
+  background-color: #ffffff14;
+}
+.action-sheet-block .actionGroup:nth-of-type(even) {
+  background-color: #ffffff24;
+}
+.actionGroup {
+  border: none;
+}
+
+.actionEntry {
+  background-color: rgb(230, 229, 224);
+}
+
+.action-control-buttons .green {
+  color: rgb(90, 163, 18);
+}
+
+.action-list .action-header {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0.25) 75%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* HUD */
+
+/* good */
+.ars-combat-hud:hover {
+  background-color: rgba(, 0.92);
+}
+.ars-combat-hud .window-header {
+  background: var(--header-bg-color);
+  color: var(--header-text-color-light);
+}
+.ars-combat-hud .window-content {
+  background: transparent;
+}
+.ars-combat-hud .specials-group {
+  color: var(--main-text-light-color);
+}
+.ars-combat-hud .specials-group .mini-hud-sa {
+  background-color: var(--text-bg-color);
+}
+.ars-combat-hud .specials-group .mini-hud-sd {
+  background-color: var(--text-bg-color);
+}
+.ars-combat-hud .specials-group .mini-hud-initiative {
+  background-color: var(--header-bg-color-light);
+  color: var(--header-text-color-light);
+}
+.ars-combat-hud .mini-hud-effect {
+  background-color: var(--text-bg-color);
+}
+.ars-combat-hud .mini-hud-effect .effect-content {
+  color: var(--main-text-light-color);
+}
+
+.ars-combat-hud .action-buttons-menu legend {
+  background: var(--header-bg-color);
+  color: var(--header-text-color-light);
+}
+
+.ars-combat-hud .action-buttons-menu .hud-mini-popup {
+  background-color: black;
+}
+.ars-combat-hud .action-buttons-menu .mini-actions-list .mini-action .action-name,
+.ars-combat-hud .action-buttons-menu .item-name {
+  color: #fff;
+  background: var(--color-border-dark-1);
+}
+.ars-combat-hud .action-buttons-menu .hud-actions .mini-actions-buttons {
+  color: white;
+}
+.ars-combat-hud .action-buttons-menu .hud-actions .mini-actions-buttons .with-background-image .item-name {
+  text-shadow: 0 0 3px #ffffff;
+}
+.ars-combat-hud .action-buttons-menu .hud-actions .mini-actions-buttons .no-image {
+  color: black;
+  background-color: rgb(194, 192, 192);
+  -webkit-text-stroke: 0.25px white;
+}
+.ars-combat-hud .action-buttons-menu .hud-actions .mini-actions-buttons .no-image .item-name {
+  text-shadow: 0 0 3px #918c8c;
+}
+.ars-combat-hud .action-buttons-menu .hud-actions .mini-actions-buttons .action-name {
+  border: 0.5px solid #666;
+}
+
+/* good  - shows the weapon or attack during attack dialog */
+.attack_dialog .lbl_attack_dialog {
+  background: var(--text-bg-color);
+  border: 1px solid var(--border-color);
+}
+
+.item-form {
+  font-family: "Arial", "Sans-serif";
+}
+
+.tox .tox-editor-container {
+  background: #fff;
+}
+
+/* good(ish) */
+#item-browser-sheet {
+  background: #000;
+}
+#item-browser-sheet.window-app .window-content {
+  background: var(--text-bg-color);
+  color: var(--main-text-light-color);
+}
+
+
+#item-browser-sheet .search-filters-box {
+  background-color: transparent;
+}
+#item-browser-sheet .rollable:hover, #item-browser-sheet .rollable:focus {
+  text-shadow: 0 0 8px red;
+}
+#item-browser-sheet .filter-search:hover, #item-browser-sheet .filter-search:focus {
+  text-shadow: 0 0 8px red;
+}
+
+.resource-numberfield {
+  background-color: #fafafa;
+}
+
+.selected_item {
+  background-color: #82ab82 !important;
+}
+
+.ars .item-titles #context-menu li.context-item,
+.ars .item-list #context-menu li.context-item {
+  background: #23221d;
+  background-color: #23221d;
+}
+
+/* good */
+.ars .item-titles li:nth-of-type(odd),
+.ars .item-list li:nth-of-type(odd) {
+  background-color: #ffffff14;
+}
+.ars .item-titles li:nth-of-type(even),
+.ars .item-list li:nth-of-type(even) {
+  background-color: #ffffff24;
+}
+
+.item-titles .in-container li:nth-of-type(odd),
+.item-list .in-container li:nth-of-type(odd) {
+  background-color: rgb(179, 179, 179);
+}
+.item-titles .in-container li:nth-of-type(even),
+.item-list .in-container li:nth-of-type(even) {
+  background-color: rgb(172, 172, 172);
+}
+
+/* good */
+.item-titles .item-header,
+.item-list .item-header {
+  background: var(--header-bg-color);
+  color: var(--header-text-color-light);
+}
+
+.inventory .magic {
+  color: darkblue;
+}
+.inventory .gm-unidentified {
+  color: red;
+}
+
+.modify-context-menu {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd;
+  background-color: white;
+}
+.modify-context-menu .action:hover {
+  background-color: #f0f0f0;
+}
+
+/* good */
+.ars .character .tab.main .ability-tables .ability-score input,
+.ars .character .tab.attributes .ability-tables .ability-score input,
+.ars .npc .tab.main .ability-tables .ability-score input,
+.ars .npc .tab.attributes .ability-tables .ability-score input,
+.ars .lootable .tab.main .ability-tables .ability-score input,
+.ars .lootable .tab.attributes .ability-tables .ability-score input {
+  color: #837360;
+  background: #ffffff14;
+}
+
+/* good */
+.ars .character .tab.main .ability-tables .fields tr:nth-of-type(odd),
+.ars .character .tab.attributes .ability-tables .fields tr:nth-of-type(odd),
+.ars .npc .tab.main .ability-tables .fields tr:nth-of-type(odd),
+.ars .npc .tab.attributes .ability-tables .fields tr:nth-of-type(odd),
+.ars .lootable .tab.main .ability-tables .fields tr:nth-of-type(odd),
+.ars .lootable .tab.attributes .ability-tables .fields tr:nth-of-type(odd) {
+  color: var(--header-text-color-light);
+  background: var(--header-bg-color);
+}
+.ars .character .tab.main .ability-tables .fields tr:nth-of-type(even),
+.ars .character .tab.attributes .ability-tables .fields tr:nth-of-type(even),
+.ars .npc .tab.main .ability-tables .fields tr:nth-of-type(even),
+.ars .npc .tab.attributes .ability-tables .fields tr:nth-of-type(even),
+.ars .lootable .tab.main .ability-tables .fields tr:nth-of-type(even),
+.ars .lootable .tab.attributes .ability-tables .fields tr:nth-of-type(even) {
+  color: var(--main-text-light-color);
+  background: var(--text-bg-color);
+}
+
+.character .tab.combat .combat-bar .initiative-block .roll-initiative:hover, .character .tab.combat .combat-bar .initiative-block .roll-initiative:focus,
+.npc .tab.combat .combat-bar .initiative-block .roll-initiative:hover,
+.npc .tab.combat .combat-bar .initiative-block .roll-initiative:focus,
+.lootable .tab.combat .combat-bar .initiative-block .roll-initiative:hover,
+.lootable .tab.combat .combat-bar .initiative-block .roll-initiative:focus {
+  text-shadow: 0 0 8px red;
+}
+
+.character .tab.combat .matrix-block.flexrow .flexcol:hover,
+.npc .tab.combat .matrix-block.flexrow .flexcol:hover,
+.lootable .tab.combat .matrix-block.flexrow .flexcol:hover {
+  background: rgb(56, 54, 54);
+  color: white;
+}
+
+/* good */
+.character .tab.details .class-list li:nth-of-type(odd),
+.npc .tab.details .class-list li:nth-of-type(odd),
+.lootable .tab.details .class-list li:nth-of-type(odd) {
+  background-color: #ffffff14;
+}
+.character .tab.details .class-list li:nth-of-type(even),
+.npc .tab.details .class-list li:nth-of-type(even),
+.lootable .tab.details .class-list li:nth-of-type(even) {
+  background-color: #ffffff24;
+}
+
+.character .tab.details .class-list .class-control,
+.npc .tab.details .class-list .class-control,
+.lootable .tab.details .class-list .class-control {
+  color: #ffffff;
+}
+
+.character .tab.details .class-list .class-control.class-removelevel,
+.npc .tab.details .class-list .class-control.class-removelevel,
+.lootable .tab.details .class-list .class-control.class-removelevel {
+  background-image: linear-gradient(to right, #8a0404 0%, #9e7575 100%);
+}
+.character .tab.details .class-list .class-control.class-addlevel,
+.npc .tab.details .class-list .class-control.class-addlevel,
+.lootable .tab.details .class-list .class-control.class-addlevel {
+  background-image: linear-gradient(to right, #1f8a04 0%, #7d9e75 100%);
+}
+.character .tab.details .class-list .class-control.not-enough-xp,
+.npc .tab.details .class-list .class-control.not-enough-xp,
+.lootable .tab.details .class-list .class-control.not-enough-xp {
+  background-image: linear-gradient(to right, #575757 0%, #bebebe 100%);
+}
+.character .tab.details .class-list .class-addlevel:hover,
+.npc .tab.details .class-list .class-addlevel:hover,
+.lootable .tab.details .class-list .class-addlevel:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(to left, #1f8a04 0%, #7d9e75 100%);
+}
+.character .tab.details .class-list .class-removelevel:hover,
+.npc .tab.details .class-list .class-removelevel:hover,
+.lootable .tab.details .class-list .class-removelevel:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.character .tab.details .class-list .class-control.not-enough-xp:hover,
+.npc .tab.details .class-list .class-control.not-enough-xp:hover,
+.lootable .tab.details .class-list .class-control.not-enough-xp:hover {
+  background-image: linear-gradient(to left, #575757 0%, #bebebe 100%);
+}
+
+.item-list .ammo-square {
+  background-color: #ddd;
+  border: 1px solid #aaa;
+}
+.item-list .ammo-icon {
+  color: #444;
+  /* Color for available ammo */
+}
+.item-list .ammo-icon.far {
+  color: #ddd;
+  /* Color for empty ammo slots */
+}
+.item-list .ammo-square.filled {
+  background-color: #444;
+  /* Color for filled squares */
+}
+.item-list .item-provision .item-quantity-bar-container {
+  background-color: #b1b1b1;
+  /* Fallback color */
+}
+.item-list .item-provision .item-quantity-bar {
+  /* Solid green for high quantity */
+  background-color: #4caf50;
+}
+.item-list .item-provision .item-quantity-bar[data-quantity="6"],
+.item-list .item-provision .item-quantity-bar[data-quantity="5"] {
+  background: linear-gradient(to right, #f44336, #ffeb3b, #4caf50);
+}
+.item-list .item-provision .item-quantity-bar[data-quantity="4"],
+.item-list .item-provision .item-quantity-bar[data-quantity="3"],
+.item-list .item-provision .item-quantity-bar[data-quantity="2"] {
+  background: linear-gradient(to right, #f44336, #ffeb3b);
+}
+.item-list .item-provision .item-quantity-bar[data-quantity="1"],
+.item-list .item-provision .item-quantity-bar[data-quantity="0"] {
+  background: #f44336;
+}
+.item-list .item-provision .item-quantity-bar[data-quantity="0"] {
+  background-color: #f44336;
+}
+
+
+/* good - bottom of item list on character sheet*/
+.carried-weight.actor-titles.flexrow {
+  background: var(--text-bg-color);
+}
+
+.adv_search_control {
+  background: white !important;
+}
+
+/* right menu buttons */
+
+/* good */
+.directory-header .item-browser,
+.directory-header .actor-browser {
+    width: -webkit-fill-available;
+    z-index: 18;
+    color: var(--color-text-light-highlight);
+    font-family: 'Kurale', serif;
+    line-height: 25px;
+    position: relative;
+    background: url(../../ui/buttons/button-bg.webp) no-repeat;
+    background-size: cover;
+    border: 1px solid #332a1f;
+    box-shadow: 0px 0px 0px 1px #675241;
+    transition: all 0.2s;
+    margin-right: 0px;
+}
+.directory-header button.item-browser,
+.directory-header button.actor-browser {
+    margin: 6px 5px;
+    height: auto;
+}
+.directory-header button.item-browser:hover,
+.directory-header button.actor-browser:hover {
+    background: url(../../ui/frames/header.webp) center center;
+    background-size: 100% 45px;
+    /*color: #a11414;*/
+}
+.directory-header button.item-browser::before,
+.directory-header button.actor-browser::before {
+    position: absolute;
+    content: ' ';
+    background: url(../../ui/buttons/corner.webp) center center no-repeat;
+    background-size: auto;
+    width: 13px;
+    height: 27px;
+    left: -5px;
+    top: 0;
+    transform: rotate(180deg);
+}
+.directory-header button.item-browser::after,
+.directory-header button.actor-browser::after {
+    position: absolute;
+    content: ' ';
+    background: url(../../ui/buttons/corner.webp) center center no-repeat;
+    background-size: auto;
+    width: 13px;
+    height: 26px;
+    right: -5px;
+    top: 0;
+}
+
+
+/* Chat and Chat Cards */
+
+/* good */
+.sheet-card .fa-expand-alt:before,
+.sheet-card .fa-compress-alt::before {
+  background: var(--text-bg-color);
+}
+
+/* good */
+.sheet-card {
+  background: var(--text-bg-color) !important;
+}
+
+.failedCheck {
+  background-color: rgb(194, 167, 167);
+}
+
+.succeedCheck {
+  background-color: rgb(198, 218, 198);
+}
+
+.hitSuccess {
+  background-color: rgb(198, 218, 198);
+}
+
+.hitFailed {
+  background-color: rgb(194, 167, 167);
+}
+
+/* good */
+.chatCard-hpadjustment .hpdamage {
+  background-color: #d90005;
+  color: var(--header-text-color-light) !important;
+}
+.chatCard-hpadjustment .hpheal {
+  background-color: #2bce46;
+  color: var(--header-text-color-light) !important;
+}
+
+/* good */
+.attackResult,
+.rolledText,
+.testResult,
+.hpadjustment,
+.undoButton,
+.spellCard-name,
+.weaponCard-name {
+  background-color: var(--text-bg-color);
+}
+.rolledText.rolledTotal.dice-total {
+  background-color: var(--text-bg-color);
+}
+.chatCard-button {
+  color: var(--main-text-very-light-color);
+  background: var(--text-bg-color);
+}
+.chatCard-button:hover {
+  box-shadow: none !important;
+  background-color: var(--header-bg-color-light);
+  color: var(--header-text-color-light);
+}
+
+.traded-list div:nth-of-type(odd) {
+  background-color: rgb(230, 229, 224);
+}
+.traded-list div:nth-of-type(even) {
+  background-color: rgb(212, 212, 211);
+}
+
+/* good */
+.action-card .general-subheader,
+.attack-card .general-subheader,
+.weapon-card .general-subheader,
+.actionChat-list .general-subheader,
+.skill-card .general-subheader,
+.dice-roll .general-subheader,
+.tradeChat-list .general-subheader {
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color-light);
+}
+
+/* good */
+.attack-card .attack-results {
+  color: var(--header-text-color-light) !important;
+}
+
+/* good */
+.chat-message .window-content .chatCard-description,
+.chat-message .message-content .chatCard-description,
+.app.window-app.ars .window-content .chatCard-description,
+.app.window-app.ars .message-content .chatCard-description {
+  background: var(--text-bg-color);
+}
+.chat-message .window-content .a25-image,
+.chat-message .message-content .a25-image,
+.app.window-app.ars .window-content .a25-image,
+.app.window-app.ars .message-content .a25-image {
+  background-color: var(--text-bg-color);
+}
+.chat-message .window-content .dice-roll .initiative-flavor,
+.app.window-app.ars .window-content .dice-roll .initiative-flavor {
+  color: var(--main-text-light-color);
+}
+
+.chat-message .window-content .spell-card .grid-container,
+.chat-message .message-content .spell-card .grid-container,
+.app.window-app.ars .window-content .spell-card .grid-container,
+.app.window-app.ars .message-content .spell-card .grid-container {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.chat-message .window-content .spell-card .spell-title,
+.chat-message .message-content .spell-card .spell-title,
+.app.window-app.ars .window-content .spell-card .spell-title,
+.app.window-app.ars .message-content .spell-card .spell-title {
+  color: red;
+}
+
+.chat-message .window-content .spell-card .spell-title .content-link,
+.chat-message .message-content .spell-card .spell-title .content-link,
+.app.window-app.ars .window-content .spell-card .spell-title .content-link,
+.app.window-app.ars .message-content .spell-card .spell-title .content-link {
+  background-color: black;
+}
+
+.character table .table-headers,
+.character tr .table-headers,
+.character th .table-headers,
+.character td .table-headers,
+.npc table .table-headers,
+.npc tr .table-headers,
+.npc th .table-headers,
+.npc td .table-headers {
+  background: transparent;
+}
+
+/* good */
 .sidebar-tab {
   font-family: 'Kurale', serif;
 }
@@ -904,4 +1807,47 @@ div.gm-screen-grid-cell-content-wrapper > div > div > aside {
   background-image: none !important;
   height: 4em;
   flex: 0 0 4em;
+}
+
+#pause img[src*="icons/svg/clockwork.svg"] {
+    box-sizing: border-box;
+    width: 128px;
+    height: 128px;
+    padding-left: 128px;
+    background-image: none;
+}
+#pause img {
+    display: none;
+}
+#pause:after {
+    content: '';
+    position: absolute;
+    top: -16px;
+    left: calc(50% - 64px);
+    box-sizing: border-box;
+    width: 128px;
+    height: 128px;
+    padding-left: 128px;
+    background-image: url("../../ui/other/paused.webp");
+    animation: rotation 20s infinite linear;
+}
+#pause:before {
+    content: '';
+    position: absolute;
+    top: -16px;
+    left: calc(50% - 64px);
+    box-sizing: border-box;
+    width: 128px;
+    height: 128px;
+    padding-left: 128px;
+    background-image: url("../../ui/other/paused_center.webp")
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
