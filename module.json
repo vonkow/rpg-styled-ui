@@ -3,11 +3,11 @@
   "title": "RPG Styled UI for Foundry VTT",
   "description": "Theme for DnD5e and ARS.",
   "url": "https://github.com/vonkow/rpg-styled-ui",
-  "version": "v1.2.1d",
+  "version": "v1.2.1e",
   "compatibility": {
     "minimum": "11",
     "verified": "11",
-    "maximum": "11"
+    "maximum": "12"
   },
   "relationships": {
     "systems": [
@@ -61,7 +61,7 @@
     }
   ],
   "manifest": "https://raw.githubusercontent.com/vonkow/rpg-styled-ui/main/module.json",
-  "download": "https://github.com/vonkow/rpg-styled-ui/archive/refs/tags/v1.2.1d.zip",
+  "download": "https://github.com/vonkow/rpg-styled-ui/archive/refs/tags/v1.2.1e.zip",
 
   "authors": [
     {

@@ -88,6 +88,15 @@ input[disabled] {
   padding-top: 0px;
 }
 
+/* added for v12 (and just in general) */
+.window-content {
+  color: var(--main-text-light-color);
+  background: #000000;
+}
+form button {
+  color: var(--main-text-very-light-color);
+}
+
 .sheet.item nav.sheet-tabs,
 .character nav.sheet-tabs,
 .npc nav.sheet-tabs {
@@ -647,6 +656,17 @@ input[disabled] {
 /* good */
 .attack-card .attack-results {
   color: var(--header-text-color-light) !important;
+}
+
+/* added for foundry v12 */
+.chat-message .message-header {
+  background: none;
+}
+.chat-message .message-content {
+  background: none;
+}
+.attack-result-container {
+  background-color: #ffffff00 !important;
 }
 
 /* good */
