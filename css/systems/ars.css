@@ -665,8 +665,14 @@ form button {
 .chat-message .message-content {
   background: none;
 }
-.attack-result-container {
+.sheet-card.attack-card .hitSuccess .attack-result-container {
   background-color: #ffffff00 !important;
+}
+.sheet-card.attack-card .hitFailed .attack-result-container {
+  background-color: #ffffff00 !important;
+}
+.chat-message .window-content .spell-card .grid-container, .chat-message .message-content .spell-card .grid-container, .app.window-app.ars .window-content .spell-card .grid-container, .app.window-app.ars .message-content .spell-card .grid-container {
+  background-color: #ffffff00;
 }
 
 /* good */
