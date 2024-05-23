@@ -89,7 +89,7 @@ input[disabled] {
 }
 
 /* added for v12 (and just in general) */
-.window-content {
+.window-app .window-content {
   color: var(--main-text-light-color);
   background: #000000;
 }
